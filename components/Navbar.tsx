@@ -12,7 +12,7 @@ export default function Navbar() {
           <a className="font-bold text-lg" href="#">
             Logo
           </a>
-          <a className="hover:text-gray-300" href="#">
+          <a className="hover:text-gray-300" href="/">
             Home
           </a>
           <a className="hover:text-gray-300" href="#">
@@ -27,7 +27,7 @@ export default function Navbar() {
           <a className="hover:text-gray-300" href="#">
             About
           </a>
-          <a className="hover:text-gray-300" href="#">
+          <a className="hover:text-gray-300" href="/contact">
             Contact
           </a>
         </div>
