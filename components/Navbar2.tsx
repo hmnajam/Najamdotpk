@@ -4,12 +4,11 @@ import { Button } from "@/components/ui/button";
 // Define the array of links
 const links = [
   { name: "Home", href: "/" },
-  { name: "Portfolio", href: "/about" },
-  { name: "Testimonials", href: "/about" },
-  { name: "Blog", href: "/about" },
+  { name: "Portfolio", href: "/portfolio" },
+  { name: "Testimonials", href: "/testimonials" },
+  { name: "Blog", href: "/blog" },
   { name: "About", href: "/about" },
-
-  { name: "Contact", href: "/about" },
+  { name: "Contact", href: "/contact" },
   // Add more links as needed
 ];
 
@@ -24,7 +23,7 @@ export default function Navbar2() {
             <Link
               key={link.name}
               href={link.href}
-              className="flex h-[48px] items-center justify-center rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3"
+              className="hover:text-gray-300"
             >
               <p className="hidden md:block">{link.name}</p>
             </Link>
@@ -33,10 +32,10 @@ export default function Navbar2() {
         <div className="flex items-center space-x-4">
           <SettingsIcon className="text-white h-6 w-6" />
           <BellIcon className="text-white h-6 w-6" />
-          <Link href="#">
+          <Link href="/resume">
             <Button className="bg-white text-[#2c0346] mx-2">Resume</Button>
           </Link>
-          <Link href="#">
+          <Link href="/hire-me">
             <Button className="bg-[#ff914d] text-white">Hire Me</Button>
           </Link>
         </div>

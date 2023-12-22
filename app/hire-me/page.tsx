@@ -1,3 +1,14 @@
+import Navbar from '@/components/Navbar';
+import Navbar2 from '@/components/Navbar2';
+
 export default function Page() {
-    return <p>Hire Me Page</p>;
-  }
+  return (
+    <>
+    <Navbar />
+    <Navbar2 />
+      <h1>This is Hire me page.</h1>
+
+
+    </>
+  );
+}
