@@ -1,44 +1,42 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/DpkNLCNyICi
- */
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
-export default function Navbar() {
+// Define the array of links
+const links = [
+  { name: "Home", href: "/" },
+  { name: "Portfolio", href: "/about" },
+  { name: "Testimonials", href: "/about" },
+  { name: "Blog", href: "/about" },
+  { name: "About", href: "/about" },
+
+  { name: "Contact", href: "/about" },
+  // Add more links as needed
+];
+
+// Your main component where you use NavLinks
+
+export default function Navbar2() {
   return (
     <nav className="bg-[#2c0346] text-white py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-8">
-          <a className="font-bold text-lg" href="#">
-            Logo
-          </a>
-          <a className="hover:text-gray-300" href="/">
-            Home
-          </a>
-          <a className="hover:text-gray-300" href="/portfolio">
-            Portfolio
-          </a>
-          <a className="hover:text-gray-300" href="testimonials">
-            Testimonials
-          </a>
-          <a className="hover:text-gray-300" href="/blog">
-            Blog
-          </a>
-          <a className="hover:text-gray-300" href="/about">
-            About
-          </a>
-          <a className="hover:text-gray-300" href="/contact">
-            Contact
-          </a>
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className="flex h-[48px] items-center justify-center rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3"
+            >
+              <p className="hidden md:block">{link.name}</p>
+            </Link>
+          ))}
         </div>
         <div className="flex items-center space-x-4">
           <SettingsIcon className="text-white h-6 w-6" />
           <BellIcon className="text-white h-6 w-6" />
-          <Link href="/about">
+          <Link href="#">
             <Button className="bg-white text-[#2c0346] mx-2">Resume</Button>
           </Link>
-          <Link href="hire-me">
+          <Link href="#">
             <Button className="bg-[#ff914d] text-white">Hire Me</Button>
           </Link>
         </div>
