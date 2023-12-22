@@ -11,13 +11,11 @@ import { CardContent, Card } from "@/components/ui/card"
 
 
 import Navbar from '@/components/Navbar';
-import Navbar2 from '@/components/Navbar2';
 
 export default function Component() {
   return (
     <>
       <Navbar />
-    <Navbar2 />
     <div className="flex items-center justify-center h-screen bg-green-500">
       <Card>
         <CardContent>
