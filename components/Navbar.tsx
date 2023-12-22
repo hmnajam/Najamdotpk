@@ -15,16 +15,16 @@ export default function Navbar() {
           <a className="hover:text-gray-300" href="/">
             Home
           </a>
-          <a className="hover:text-gray-300" href="#">
+          <a className="hover:text-gray-300" href="/portfolio">
             Portfolio
           </a>
-          <a className="hover:text-gray-300" href="#">
+          <a className="hover:text-gray-300" href="testimonials">
             Testimonials
           </a>
-          <a className="hover:text-gray-300" href="#">
+          <a className="hover:text-gray-300" href="/blog">
             Blog
           </a>
-          <a className="hover:text-gray-300" href="#">
+          <a className="hover:text-gray-300" href="/about">
             About
           </a>
           <a className="hover:text-gray-300" href="/contact">
