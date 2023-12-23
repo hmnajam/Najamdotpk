@@ -12,6 +12,7 @@ export default function Home() {
     <Herotry />
     <h6>This is my home page.</h6>
 
+
     <Footer2 />
 
  

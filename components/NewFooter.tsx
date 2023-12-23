@@ -21,18 +21,18 @@ export default function Footer2() {
               <a href="#" rel="noopener noreferrer" target="_blank">
                 <YoutubeIcon className="h-6 w-6" />
               </a>
-              <a href="#" rel="noopener noreferrer" target="_blank">
+              {/* <a href="#" rel="noopener noreferrer" target="_blank">
                 <InstagramIcon className="h-6 w-6" />
-              </a>
+              </a> */}
               <a href="#" rel="noopener noreferrer" target="_blank">
                 <InstagramIcon className="h-6 w-6" />
               </a>
               <a href="#" rel="noopener noreferrer" target="_blank">
                 <LinkedinIcon className="h-6 w-6" />
               </a>
-              <a href="#" rel="noopener noreferrer" target="_blank">
+              {/* <a href="#" rel="noopener noreferrer" target="_blank">
                 <MessageCircleIcon className="h-6 w-6" />
-              </a>
+              </a> */}
             </div>
             <div className="flex space-x-10">
               <a className="block text-sm" href="#">
