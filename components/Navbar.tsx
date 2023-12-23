@@ -26,18 +26,25 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="hover:text-gray-300"
+              className="hover:text-blue-300"
             >
               <p className="hidden md:block">{link.name}</p>
             </Link>
           ))}
         </div>
+
         <div className="flex items-center space-x-4">
           <SettingsIcon className="text-white h-6 w-6" />
           <BellIcon className="text-white h-6 w-6" />
-          <Link href="/resume">
-            <Button className="bg-white text-[#2c0346] mx-2">Resume</Button>
-          </Link>
+
+          <a
+            href="/Resume.pdf"
+            download
+            className="bg-[#ff914d]  text-white mx-2 p-2 rounded-md hover:bg-sky-100 hover:text-blue-600"
+          >
+            Resume
+          </a>
+
           <Link href="/hire-me">
             <Button className="bg-[#ff914d] text-white">Hire Me</Button>
           </Link>
