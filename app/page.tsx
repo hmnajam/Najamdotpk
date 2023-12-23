@@ -13,6 +13,9 @@ export default function Home() {
     <h6>This is my home page.</h6>
 
 
+
+
+
     <Footer2 />
 
  
