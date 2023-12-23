@@ -16,7 +16,7 @@ export default function Component() {
   return (
     <>
       <Navbar />
-    <div className="flex items-center justify-center h-screen bg-green-500">
+    <div className="flex items-center justify-center h-screen bg-black">
       <Card>
         <CardContent>
           <div className="space-y-8">

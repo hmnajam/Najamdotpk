@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Herotry from '@/components/Hero';
+import Hero2 from '@/components/Hero2';
 import Footer from '@/components/Footer';
 import Footer2 from '@/components/NewFooter';
 import Link from 'next/link';
@@ -9,7 +10,8 @@ export default function Home() {
   return (
     <>
     <Navbar />
-    <Herotry />
+    {/* <Herotry /> */}
+    <Hero2 />
     <h6>This is my home page.</h6>
 
 
